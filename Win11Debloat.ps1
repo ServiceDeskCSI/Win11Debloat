@@ -655,7 +655,7 @@ function PrintHeader {
         $fullTitle = "$fullTitle (User: $Env:UserName)"
     }
 
-    Clear-Host
+    #Clear-Host
     Write-Output "-------------------------------------------------------------------------------------------"
     Write-Output $fullTitle
     Write-Output "-------------------------------------------------------------------------------------------"
@@ -667,7 +667,7 @@ function PrintFromFile {
         $path
     )
 
-    Clear-Host
+    #Clear-Host
 
     # Get & print script menu from file
     Foreach ($line in (Get-Content -Path $path )) {   
